@@ -1,0 +1,93 @@
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 200px;
+}
+
+body {
+  background-color: #131313;
+}
+
+.content::after {
+  content: "";
+  background: url(people.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  top: -22%;
+  left: 0;
+  padding-top: 66%;
+  height: auto;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.movieContainer {
+  padding: 50px 0;
+  clear: both;
+  position: relative;
+  overflow: auto;
+}
+
+.movieCell {
+  width: 220px;
+  height: 330px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+  background-size: cover;
+  position: relative;
+  float: left;
+}
+
+.movieCell:nth-child(4n) {
+  margin-right: 0;
+}
+
+.movieCell:hover .details {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.movieCell .details {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 60px 20px 10px;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.movieCell img {
+  display: block;
+  margin: 10px auto 20px;
+  width: 100px;
+}
+
+.book {
+  background-color: #B90628;
+  padding: 4px 9px;
+  border-radius: 3px;
+  font-size: 10pt;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 100ms;
+}
+
+
+.book:hover {
+  transition: all 100ms;
+  background-color: #EF0230;
+}
+
+.movieCell .title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 21pt;
+    line-height: 1em;
+    padding: 20px 0 15px;
+}

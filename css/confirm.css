@@ -1,0 +1,55 @@
+.content {
+  position: relative;
+  background-image: url("chairs.jpg");
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+  background-size: 102%;
+  background-color: black;
+}
+
+.ticket {
+  margin: 50px auto;
+  width: 250px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  padding: 30px 20px 20px;
+  line-height: 1.2em;
+  background:
+    -webkit-radial-gradient(0 0, circle, rgba(0,0,0,0) 20px, #a50b10 20px),
+    -webkit-radial-gradient(100% 0, circle, rgba(0,0,0,0) 20px, #a50b10 20px);
+  background-position: left, right;
+  -moz-background-size: calc(50% + 1px) 100%;
+  -webkit-background-size: calc(50% + 1px) 100%;
+  background-size: calc(50% + 1px) 100%;
+  background-repeat: no-repeat;
+}
+
+.details {
+  background-color: white;
+  background-image: linear-gradient(to right, black 40%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+}
+
+.details, .paid {
+  padding: 20px 10px;
+  line-height: 1.8em;
+  color: black;
+}
+
+.paid {
+  padding-bottom: 30px;
+  background:
+    -webkit-radial-gradient(0 100%, circle, rgba(0,0,0,0) 20px, white 20px),
+    -webkit-radial-gradient(100% 100%, circle, rgba(0,0,0,0) 20px, white 20px);
+  background-position: left, right;
+  -moz-background-size: calc(50% + 1px) 100%;
+  -webkit-background-size: calc(50% + 1px) 100%;
+  background-size: calc(50% + 1px) 100%;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,43 @@
+
+#show-page, #show-viewplan, #show-editplan, #show-requirements, #show-cohorts  {
+	display: inline-block;
+	cursor: pointer;
+	color: #f6b93b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: bold;
+    position: inherit;
+}
+
+#show-page.select, #show-viewplan.current, #show-editplan.current, #show-requirements.current, #show-cohorts {
+	font-weight: lighter;
+    cursor: default;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #B90628;
+}
+
+#show-page.selected {
+	font-weight: lighter;
+    color: #B90628;
+    cursor: default;
+}
+
+
+#show-page:hover, #show-viewplan:hover, #show-editplan:hover, #show-requirements :hover #show-cohorts:hover{
+	color: #B90628;
+	transition: color 200ms;
+}
+
+table {
+  margin: 0;
+	padding: 5px;
+	border: 1px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    border-collapse: collapse;
+	border-spacing: 0;
+}
